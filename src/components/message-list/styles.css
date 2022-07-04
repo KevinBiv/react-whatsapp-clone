@@ -1,0 +1,266 @@
+:root {
+    --header-section-bg: #f0f2f5;
+    --middle-header-bg: #53bdeb;
+    --message-card-contact-color: #111B21;
+    --message-card-date-color: #667781;
+    --message-card-message-content-color: #3B4A54;
+    --message-card-message-status-color: #adb8c0;
+    --scrollbar-color: #c3c1bc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #c3c1bc;
+    width: 1vw;
+}
+
+.aside-box {
+    width: 480px;
+    height: 100%;
+    background-color: black;
+    display: inline-block;
+    vertical-align: top;
+    position: sticky;
+}
+
+.header-section {
+    width: 100%;
+    /* height: 260px; */
+    /* position: relative; */
+}
+
+.top-header-section {
+    background: var(--header-section-bg);
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 59px;
+    padding: 10px 16px;
+}
+
+.profile-img-btn {
+    border: none;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header-section_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.header-section_icons button {
+    color: #54656f;
+    border: none;
+    cursor: pointer;
+}
+
+/* .status {
+    position: absolute;
+} */
+
+/* .new-chat {
+    position: absolute;
+} */
+
+/* .menu {
+    position: absolute;
+} */
+
+.middle-header-section {
+    border: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    background-color: var(--middle-header-bg);
+    width: 100%;
+    height: 89px;
+    top: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-header-section svg {
+    color: #fff;
+}
+
+.middle-header_text {
+    font-family: "Segoe UI", Helvetica, sans-serif;
+    width: 85%;
+    text-align: left;
+}
+
+.middle-header_text h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111b21;
+}
+
+.middle-header_text span {
+    font-size: 14px;
+    color: #202c33;
+}
+
+.bottom-header-section {
+    padding: 0 12px;
+    top: 148px;
+    width: 100%;
+    height: 49px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.bottom-header-container {
+    width: 90%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f2f5;
+    /* position: absolute; */
+    margin: 0 auto;
+    padding: 0 10px;
+    border-radius: 8px;
+}
+
+.bottom-header-container input{
+    width: 90%;
+    border: none;
+    height: 90%;
+    background-color: #f0f2f5;
+}
+
+.bottom-header-container input:focus {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.body-section {
+    width: 100%;
+    height: 75%;
+    overflow-y: scroll;
+}
+
+.body-section::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+.body-section::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.body-section::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+}
+
+.card-btn {
+    border: none;
+    height: 72px;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #f0f2f5;
+}
+
+.profile-pic {
+    width: 49px;
+    border-radius: 50%;
+}
+
+.card-content {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.upper-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-content .contact-name {
+    color: var(--message-card-contact-color);
+    font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Ubuntu','Cantarell','Fira Sans',sans-serif;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.upper-content .date {
+    color: var(--message-card-date-color);
+    font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Ubuntu','Cantarell','Fira Sans',sans-serif;
+    font-size: 12px;
+}
+
+.lower-content {
+    width: 100%;
+    text-align: start;
+}
+
+.lower-content .message-content {
+    color: var(--message-card-message-content-color);
+    font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Ubuntu','Cantarell','Fira Sans',sans-serif;
+    font-size: 14px;
+}
+
+.lower-content .message-status {
+    /* display: table-cell;
+    vertical-align: middle; */
+    color: var(--message-card-message-status-color);
+    display: inline-flex;
+    align-items: center;
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 2px;
+}
+
+
+/* Custom Scrollbar */
