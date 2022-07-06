@@ -1,7 +1,14 @@
 import './styles.css';
 import MessageCard from '../message-card';
+import chats from "../../data/chats.json";
 
+const { contacts } = chats;
+const messageStatus = ["NOT_SENT", "SENT", "DELIVERED", "SEEN"];
+const onMenuButtonClick = (evt)=>{
+    console.log("clicked");
+}
 function MessageList() {
+    console.log(contacts);
     return (
         <aside className="aside-box">
             {/* <img src="https://pps.whatsapp.net/v/t61.24694-24/217827628_1208083816603460_2809788846920893319_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVyo1Z8LwGUw-8oHaXLVLOv8zGT0GkGn5GlweyyHTqQYtA&amp;oe=62CC1D68" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr"></img> */}
@@ -14,7 +21,7 @@ function MessageList() {
                         {/* <span data-testid="status-v3-unread" data-icon="status-v3-unread" class=""><svg version="1.1" id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"></path><path fill="#009588" d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path></svg></span> */}
                         <button><svg className='status' version="1.1" id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"></path><path fill="#009588" d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path></svg></button>
                         <button><svg className='new-chat' viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z"></path></svg></button>
-                        <button><svg className='menu' viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg></button>
+                        <button onClick={onMenuButtonClick}><svg className='menu' viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg></button>
                     </div>
                 </div>
                 <button className="middle-header-section">
@@ -34,35 +41,15 @@ function MessageList() {
             </div>
 
             <div className='body-section'>
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
-                
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/289048539_583486203146516_4377962761476895948_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=0b8ddf3718e421cf458ce956d2299511&amp;oe=62D08A5B" name="Karera Olivier" date="6/4/2022" message="Slm Capo" messageStatus="" />
 
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/227723283_621319455620587_2546999499566072587_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxwKSx2ycpbtBdZY5Ibnm8nG3HDEaUSdeQvoHda-8JkpQ&amp;oe=62D20F01" name="GDG Kigali Forum" date="6/4/2022" message="Message Content" />
-                
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/289692951_570259344536069_2959391221299221177_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVywRqnxnt-hEVW2sOR4yBA2uO4SIzihCTNMEPD7ztDaPw&amp;oe=62D47413" name="Abraham Auguste" date="6/4/2022" message="De rien" messageStatus="" />
-
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
-                
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
-
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
-                
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
-
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
-                
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
-
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
-                
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
-
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
-                
-                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
-
-                
+                {contacts.map(contact=>{
+                    const date = new Date(contact.lastMessageTimeStamp);
+                    return <MessageCard 
+                        messageStatus = {messageStatus[contact.messageStatus]}
+                        profile={contact.profilePictureURL} 
+                        name={contact.names} date={date.toDateString()}
+                        message={contact.lastMessage} />
+                })}
             </div>
         </aside>
     )
