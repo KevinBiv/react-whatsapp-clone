@@ -1,4 +1,5 @@
 import './styles.css';
+import MessageCard from '../message-card';
 
 function MessageList() {
     return (
@@ -33,213 +34,33 @@ function MessageList() {
             </div>
 
             <div className='body-section'>
-                {/* <MessageCard name="Khan" date="6/4/2022" message="Message Content" />
-                <MessageCard name="Khan" /> */}
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
+                
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/289048539_583486203146516_4377962761476895948_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=0b8ddf3718e421cf458ce956d2299511&amp;oe=62D08A5B" name="Karera Olivier" date="6/4/2022" message="Slm Capo" messageStatus="" />
 
-                <button className='card-btn'>
-                    <div className="card">
-                        <img src="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Khan</p>
-                                <p className='date'>10: 40PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg></span>Slm capo</p>
-                            </div>
-                        </div>
-                    </div>
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/227723283_621319455620587_2546999499566072587_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxwKSx2ycpbtBdZY5Ibnm8nG3HDEaUSdeQvoHda-8JkpQ&amp;oe=62D20F01" name="GDG Kigali Forum" date="6/4/2022" message="Message Content" />
+                
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/289692951_570259344536069_2959391221299221177_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVywRqnxnt-hEVW2sOR4yBA2uO4SIzihCTNMEPD7ztDaPw&amp;oe=62D47413" name="Abraham Auguste" date="6/4/2022" message="De rien" messageStatus="" />
 
-                </button>
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
+                
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
 
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
+                
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
 
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/268772028_117735397366081_6841187990872155504_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVwtZBCF4sfAFQXEMN-4H_6DOLRb80FfvYYhyPKQj637OQ&amp;oe=62D3A7C3" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Java Monday Evening Grp</p>
-                                <p className='date'>10: 23PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'></span>+250 787 003 130 left</p>
-                            </div>
-                        </div>
-                    </div>
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
+                
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
 
-                </button>
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
+                
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
 
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/183592392_159611266504975_991478195217552020_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxiYKwXxud0omtDX_yg-sV6Qb9p9vLDZsqdkIGN836cMg&amp;oe=62D2511F" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Future Programmers</p>
-                                <p className='date'>10: 20PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'></span>Eric Ishimwe AUCA: No</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/289048539_583486203146516_4377962761476895948_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=0b8ddf3718e421cf458ce956d2299511&amp;oe=62D08A5B" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Karera Olivier</p>
-                                <p className='date'>10: 10PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg></span>Thats the spirit 👊</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/289692951_570259344536069_2959391221299221177_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVywRqnxnt-hEVW2sOR4yBA2uO4SIzihCTNMEPD7ztDaPw&amp;oe=62D47413" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Abraham Auguste</p>
-                                <p className='date'>9: 19PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg></span>👊</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
-
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/268772028_117735397366081_6841187990872155504_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVwtZBCF4sfAFQXEMN-4H_6DOLRb80FfvYYhyPKQj637OQ&amp;oe=62D3A7C3" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Java Monday Evening Grp</p>
-                                <p className='date'>8: 50PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'></span>+250 787 003 130 left</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/183592392_159611266504975_991478195217552020_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxiYKwXxud0omtDX_yg-sV6Qb9p9vLDZsqdkIGN836cMg&amp;oe=62D2511F" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Future Programmers</p>
-                                <p className='date'>7: 53PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'></span>Eric Ishimwe AUCA: No</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/285266555_2389122031225635_7526457465051802643_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVyv8rixhIiEp1XY1-0cmi2Ou7vlNAOCw6ij86-CLbdBQQ&amp;oe=62D21781" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Real Friends</p>
-                                <p className='date'>7: 54PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'></span>Paccy: Watwikuruye c?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/289048539_583486203146516_4377962761476895948_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=0b8ddf3718e421cf458ce956d2299511&amp;oe=62D08A5B" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Karera Olivier</p>
-                                <p className='date'>7: 23PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'><svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="currentColor" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg></span>Thats the spirit 👊</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/183592392_159611266504975_991478195217552020_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxiYKwXxud0omtDX_yg-sV6Qb9p9vLDZsqdkIGN836cMg&amp;oe=62D2511F" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Future Programmers</p>
-                                <p className='date'>6: 50PM</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'></span>Eric Ishimwe AUCA: No</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/227723283_621319455620587_2546999499566072587_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxwKSx2ycpbtBdZY5Ibnm8nG3HDEaUSdeQvoHda-8JkpQ&amp;oe=62D20F01" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>GDG Kigali Forum</p>
-                                <p className='date'>Yesterday</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'></span>+250 787 003 130 left</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
-
-                <button className='card-btn'>
-                    <div className="card">
-                    <img src="https://pps.whatsapp.net/v/t61.24694-24/268772028_117735397366081_6841187990872155504_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVwtZBCF4sfAFQXEMN-4H_6DOLRb80FfvYYhyPKQj637OQ&amp;oe=62D3A7C3" alt="" draggable="false" class="profile-pic" />
-                        <div className="card-content">
-                            <div className="upper-content">
-                                <p className='contact-name'>Java Monday Evening Grp</p>
-                                <p className='date'>Saturday</p>
-                            </div>
-                            <div className="lower-content">
-                                <p className='message-content'><span className='message-status'></span>+250 787 003 130 left</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </button>
-
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Message Content" />
+                
+                <MessageCard profile="https://pps.whatsapp.net/v/t61.24694-24/211826250_363367295466165_3797773433115823567_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVweF2PwIoGMAULWiXI5mA9gR_FwMghRWECT6J5-yinIcQ&amp;oe=62D34166" name="Khan" date="6/4/2022" message="Slm Capo" messageStatus="" />
 
                 
             </div>

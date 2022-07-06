@@ -1,0 +1,75 @@
+.card-btn {
+    border: none;
+    height: 72px;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #f0f2f5;
+}
+
+.profile-pic {
+    width: 49px;
+    border-radius: 50%;
+}
+
+.card-content {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.upper-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-content .contact-name {
+    color: var(--message-card-contact-color);
+    font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Ubuntu','Cantarell','Fira Sans',sans-serif;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.upper-content .date {
+    color: var(--message-card-date-color);
+    font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Ubuntu','Cantarell','Fira Sans',sans-serif;
+    font-size: 12px;
+}
+
+.lower-content {
+    width: 100%;
+    text-align: start;
+}
+
+.lower-content .message-content {
+    color: var(--message-card-message-content-color);
+    font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Ubuntu','Cantarell','Fira Sans',sans-serif;
+    font-size: 14px;
+}
+
+.lower-content .message-status {
+    /* display: table-cell;
+    vertical-align: middle; */
+    color: var(--message-card-message-status-color);
+    display: inline-flex;
+    align-items: center;
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 2px;
+}
