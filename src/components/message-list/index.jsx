@@ -7,7 +7,10 @@ const messageStatus = ["NOT_SENT", "SENT", "DELIVERED", "SEEN"];
 const onMenuButtonClick = (evt)=>{
     console.log("clicked");
 }
-function MessageList() {
+function MessageList(props) {
+    function giveData (data){
+        props.callback(data);
+    }
     return (
         <aside className="aside-box">
             {/* <img src="https://pps.whatsapp.net/v/t61.24694-24/217827628_1208083816603460_2809788846920893319_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVyo1Z8LwGUw-8oHaXLVLOv8zGT0GkGn5GlweyyHTqQYtA&amp;oe=62CC1D68" alt="" draggable="false" class="_8hzr9 M0JmA i0jNr"></img> */}
@@ -49,8 +52,11 @@ function MessageList() {
                     return <MessageCard 
                         messageStatus = {messageStatus[contact.messageStatus]}
                         profile={contact.profilePictureURL} 
-                        name={contact.names} date={date.toDateString()}
-                        message={contact.lastMessage} />
+                        name={contact.names} 
+                        date={date.toDateString()}
+                        message={contact.lastMessage}
+                        callback = {giveData}
+                         />
                 })}
             </div>
         </aside>
