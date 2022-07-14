@@ -61,11 +61,10 @@
     color: var(--message-card-message-content-color);
     font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Ubuntu','Cantarell','Fira Sans',sans-serif;
     font-size: 14px;
+    padding: 0;
 }
 
 .lower-content .message-status {
-    /* display: table-cell;
-    vertical-align: middle; */
     color: var(--message-card-message-status-color);
     display: inline-flex;
     align-items: center;

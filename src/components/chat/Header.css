@@ -1,0 +1,115 @@
+:root {
+    --aside-box-width: 480px;
+    --header-height: 59px;
+    --chat-input-height: 62px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-box {
+    width: calc(100% - var(--aside-box-width));
+    height: 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv9g6hxStBKmc621QRV0JaUt5GKmhmiaqNmQ&usqp=CAU");
+    overflow: hidden;
+    background-repeat: repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-svg {
+    position: relative;
+}
+.center-svg svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+
+}
+
+
+/* Added CSS styles from WhatsApp3.0 */
+
+.chat-container{
+    background-color: #f0f2f5;
+    border-left: 1px solid #d1d7db;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;   */
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 10px 16px;
+    height: 59px;
+    overflow-y: hidden;
+}
+
+.chat-profile {
+    text-align: left;
+}
+
+.chat-profile-img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+}
+
+.chat-contact-name {
+    color: #111B21;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.chat-header-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.chat-content {
+    /* background-color: yellow; */
+    width: 100%;
+    height: calc(100vh - (var(--header-height) + var(--chat-input-height)));
+    padding: 0 85px;
+}
+
+.chat-input {
+    height: var(--chat-input-height);
+    background-color: #f0f2f5;
+    padding: 5px 17px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-input-tag {
+    width: 100%;
+    height: 42px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.chat-input form {
+    width: 88%;
+}
+
+.chat-input button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

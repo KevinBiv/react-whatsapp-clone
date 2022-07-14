@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/chat/App';
+import Header from './components/chat/Header';
 import MessageList from './components/message-list/index';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +18,7 @@ function AppContainer () {
   return <React.StrictMode>
   <>
     <MessageList callback = {giveData} />
-    <App contactData={currentContact} />
+    <Header contactData={currentContact} />
   </>
 </React.StrictMode>
 }

@@ -59,6 +59,20 @@ function MessageList(props) {
                         callback = {giveData}
                          />
                 })}
+
+                {contacts.map(contact=>{
+                    const date = new Date(contact.lastMessageTimeStamp);
+                    return <MessageCard 
+                        messageStatus = {messageStatus[contact.messageStatus]}
+                        profile={contact.profilePictureURL} 
+                        name={contact.names} 
+                        date={date.toDateString()}
+                        message={contact.lastMessage}
+                        contactId = {contact.contactId}
+                        callback = {giveData}
+                         />
+                })}
+
             </div>
         </aside>
     )
