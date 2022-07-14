@@ -60,7 +60,6 @@ class App extends Component {
     const input = form.querySelector("input[name=message]");
     const value = input.value;
     const type = Math.round(Math.random() * 1);
-    console.log(type);
     const message = {
         message: value,
         type,
