@@ -55,6 +55,7 @@ function MessageList(props) {
                         name={contact.names} 
                         date={date.toDateString()}
                         message={contact.lastMessage}
+                        contactId = {contact.contactId}
                         callback = {giveData}
                          />
                 })}

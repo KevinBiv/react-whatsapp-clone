@@ -17,3 +17,18 @@
     display: inline-block;
     /* background-color: black; */
 }
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-svg {
+    position: relative;
+}
+.center-svg svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+
+}

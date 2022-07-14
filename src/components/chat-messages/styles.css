@@ -1,0 +1,23 @@
+.chat-message{
+    width: 100%;
+    display: flex;
+    
+}
+.chat-message.left{
+    justify-content: left;
+}
+.message-content{
+    padding: 16px;
+}
+.chat-message.left .message-content{
+    background-color: aquamarine;
+    margin: 8px 0;
+    
+}
+.chat-message.chat-message.right .message-content{
+    background-color: red;
+    
+}
+.chat-message.right{
+    justify-content: right;
+}

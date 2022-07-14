@@ -10,7 +10,7 @@
             "contactId": "1"
         },
         {
-            "profilePictureURL": "https://pps.whatsapp.net/v/t61.24694-24/292153700_985737842117451_3538596057759536981_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=1cea257b14ec80643c8a4f6b298809d6&oe=62D50D99",
+            "profilePictureURL": "/static/pic1.jpg",
             "names": "Random Guy",
             "lastMessageTimeStamp": 1657093090489,
             "lastMessage": "Some other message",
@@ -46,19 +46,20 @@
     "messages": {
         "1": [
             {
-                "message": "hey",
+                "message": "/static/pic1.jpg",
                 "type": 0,
-                "status": 1
+                "status": 1,
+                "isPicture": true
             },
             {
-                "message": "hey",
+                "message": "hey contact one",
                 "type": 1,
                 "status": 1
             }
         ],
         "2": [
             {
-                "message": "hey",
+                "message": "hey contact two",
                 "type": 0,
                 "status": 1
             },
@@ -68,5 +69,6 @@
                 "status": 1
             }
         ]
-    }
+    },
+    "url": "/static/js/pic1.jpg"
 }
