@@ -69,6 +69,7 @@ html::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
     width: 30%;
+    position: relative;
 }
 
 .header-section_icons button {
@@ -157,6 +158,44 @@ html::-webkit-scrollbar-thumb {
 
 .bottom-header-container input:focus {
     border: none;
+}
+
+
+/* Added CSS for menu button */
+
+.menu-class {
+    position: absolute;
+    top: 90%;
+    right: 5px;
+    /* bottom: -100px; */
+    background-color: #fff;
+    padding: 9px 0;
+    box-shadow: 0px 0px 3px black;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-class ul {
+    list-style-type: none;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14.5px;
+    
+}
+
+.menu-class ul li button {
+    text-align: left;
+    width: 193px;
+    background-color: transparent;
+    padding: 13px 58px 13px 24px;
+}
+
+.menu-class ul li button:hover {
+    background-color: #f0f2f5;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
