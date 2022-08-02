@@ -30,7 +30,7 @@ html::-webkit-scrollbar-thumb {
 .aside-box {
     width: 480px;
     height: 100%;
-    background-color: black;
+    background-color: red;
     display: inline-block;
     vertical-align: top;
     position: sticky;

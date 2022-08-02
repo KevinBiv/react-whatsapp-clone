@@ -17,3 +17,4 @@ export class ChatMessage extends Component{
         </div>
     }
 }
+

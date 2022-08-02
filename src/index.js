@@ -19,6 +19,7 @@ function AppContainer () {
   <>
     <MessageList callback = {giveData} />
     <Header contactData={currentContact} />
+    
   </>
 </React.StrictMode>
 }

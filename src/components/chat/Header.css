@@ -113,3 +113,7 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+.chat-home {
+    background-color: red;
+}

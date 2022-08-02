@@ -1,7 +1,7 @@
 {
     "contacts": [
         {
-            "profilePictureURL": "https://pps.whatsapp.net/v/t61.24694-24/227723283_621319455620587_2546999499566072587_n.jpg?stp=dst-jpg_s96x96&amp;ccb=11-4&amp;oh=01_AVxwKSx2ycpbtBdZY5Ibnm8nG3HDEaUSdeQvoHda-8JkpQ&amp;oe=62D20F01",
+            "profilePictureURL": "/static/pic1.jpg",
             "names": "GDG Kigali Forum",
             "lastMessageTimeStamp": 1657093090489,
             "lastMessage": "Message Content",
@@ -18,7 +18,7 @@
             "contactId": "2"
         },
         {
-            "profilePictureURL": "https://pps.whatsapp.net/v/t61.24694-24/292153700_985737842117451_3538596057759536981_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=1cea257b14ec80643c8a4f6b298809d6&oe=62D50D99",
+            "profilePictureURL": "/static/pic1.jpg",
             "names": "Random Guy",
             "lastMessageTimeStamp": 1657093090489,
             "lastMessage": "Some other message",
@@ -26,7 +26,7 @@
             "contactId": "4"
         },
         {
-            "profilePictureURL": "https://pps.whatsapp.net/v/t61.24694-24/292153700_985737842117451_3538596057759536981_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=1cea257b14ec80643c8a4f6b298809d6&oe=62D50D99",
+            "profilePictureURL": "/static/pic1.jpg",
             "names": "Random Guy",
             "lastMessageTimeStamp": 1657093090489,
             "lastMessage": "Some other message",
@@ -34,7 +34,7 @@
             "contactId": "5"
         },
         {
-            "profilePictureURL": "https://pps.whatsapp.net/v/t61.24694-24/292153700_985737842117451_3538596057759536981_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=1cea257b14ec80643c8a4f6b298809d6&oe=62D50D99",
+            "profilePictureURL": "/static/pic1.jpg",
             "names": "Random Guy",
             "lastMessageTimeStamp": 1657093090489,
             "lastMessage": "Some other message",
@@ -66,9 +66,22 @@
             {
                 "message": "hey",
                 "type": 1,
+                "status": 1 
+            }
+        ],
+        "3": [
+            {
+                "message": "Some other message",
+                "type": 0,
+                "status": 1
+            },
+            {
+                "message": "hey",
+                "type": 1,
                 "status": 1
             }
         ]
     },
-    "url": "/static/js/pic1.jpg"
+    "url": "/static/js/pic2.jpg"
+    
 }

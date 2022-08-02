@@ -8,6 +8,7 @@
 }
 .message-content{
     padding: 16px;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .chat-message.left .message-content{
     background-color: #fff;
